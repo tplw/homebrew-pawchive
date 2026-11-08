@@ -7,14 +7,18 @@ a native client for the Pawchive archive.
 
 ```bash
 brew tap tplw/pawchive
+brew trust tplw/pawchive
 brew install --cask pawchive
 ```
 
 Or install the cask directly:
 
 ```bash
+brew trust tplw/pawchive
 brew install --cask tplw/pawchive/pawchive
 ```
+
+Homebrew 7 asks you to trust third-party taps before installing from them.
 
 ## Update
 
