@@ -2,8 +2,7 @@ cask "pawchive" do
   version "1.0.5"
   sha256 "60774467ca36991f957af80397d424114062508d8a17284ab1e591b983a303ec"
 
-  url "https://github.com/tplw/Pawchive-Client/releases/download/v#{version}/Pawchive_#{version}_universal.dmg",
-      verified: "github.com/tplw/Pawchive-Client/"
+  url "https://github.com/tplw/Pawchive-Client/releases/download/v#{version}/Pawchive_#{version}_universal.dmg"
   name "Pawchive"
   desc "Native client for the Pawchive archive"
   homepage "https://github.com/tplw/Pawchive-Client"
@@ -13,7 +12,7 @@ cask "pawchive" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "Pawchive.app"
 
